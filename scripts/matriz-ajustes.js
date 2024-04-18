@@ -4,7 +4,7 @@ const EVENTOS = {
     },
     irErrorDetectable() {
         $("body").on("click", "#btn_error_detectable", (evento) => {
-            location = "/error-detectable.html"
+            location = "./error-detectable.html"
         });
     }
 };

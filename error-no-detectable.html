@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Error no detectable</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="styles/error-no-detectable.css" />
+</head>
+
+<body>
+    <div class="container py-4">
+        <div class="row py-4">
+            <div class="col-lg-10 mx-auto">
+                <div class="card rounded shadow border-0 main-card">
+                    <div class="card-body bg-white rounded position-relative">
+                        <div class="row">
+                            <div class="col-md-12 text-center">
+                                <h1 class="titulo pointer mb-4" id="titulo_error_no_detectable">Error no detectable</h1>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4 flex-column align-items-stretch">
+                                <button class="btn btn-primary boton--cyan mb-4 p-3 boton_accion"
+                                    id="btn_escenarios">Motivos</button>
+
+                                <button class="btn btn-primary boton--cyan mb-4 p-3 boton_accion"
+                                    id="btn_nc_occ_conceptos">NC Y
+                                    OCC Conceptos</button>
+
+                                <button class="btn btn-primary boton--cyan p-3 boton_accion"
+                                    id="btn_tipificacion">Speech de Solución Anticipada</button>
+                            </div>
+
+                            <div class="col-md-8">
+                                <div class="container_error_no_detectable">
+                                    <ul class="lista-principal">
+                                        <li>1. Realiza el análisis y explica detalladamente el concepto facturado.</li>
+                                        <li class="mb-4">2. Si no se encontró ningun error y cliente desea reclamar
+                                            OFRECE AJUSTE POR
+                                            SATISFACCIÓN dependiendo del escenario.</li>
+                                    </ul>
+
+
+                                    <div class="card card-border mb-4">
+                                        <div class="card-header bg-blue text-white">
+                                            No ofrecer ajuste si
+                                        </div>
+
+                                        <div class="card-body">
+                                            <ul>
+                                                <li>Tiene Reclamos por lo mismo, en los últimos 6 meses.</li>
+                                                <li>Alerta recurrente en Siebel (ARM)</li>
+                                                <li>Ajuste por satisfacción en los últimos 3 meses.</li>
+                                            </ul>
+                                            <em>
+                                                <p style="color:red;">Aplicar nuevo speech (coordinar con CX): Speech
+                                                    pendiente</p>
+                                            </em>
+                                        </div>
+                                    </div>
+
+                                    <div class="card card-border">
+                                        <div class="card-header bg-blue text-white">
+                                            Si el cliente no acepta y decide reclamar
+                                        </div>
+
+                                        <div class="card-body">
+                                            <ul>
+                                                <li><strong>CAL :</strong> Ingresa reclamo de acuerdo a procedimientos.
+                                                </li>
+                                                <li><strong>Whatsapp/Redes:</strong> Deriva a cliente al 123, web o
+                                                    tienda.
+                                                </li>
+                                                <li><strong>Web:</strong> <a
+                                                        href="https://informatepersonas.custhelp.com/app/answers/detail/a_id/1819"
+                                                        target="_blank">https://informatepersonas.custhelp.com/app/answers/detail/a_id/1819</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="container_cliente_solucion d-none">
+                                    <p class="alerta-outline--blue p-2 mb-5">¿En caso el cliente acepte una solución
+                                        anticipada?</p>
+
+                                    <div class="container-lista">
+                                        <ul class="lista">
+                                            <li>Registra el caso en Siebel con Estado “En Progreso”.</li>
+
+                                            <li>Indicar speech de solución anticipada.
+                                                <a href="https://informatepersonas.custhelp.com/app/answers/detail/a_id/1814/kw/1814"
+                                                    target="_blank" class="enlace">
+                                                    Click para ir al enlace
+                                                </a>
+                                            </li>
+
+                                            <li class="mb-0">
+                                                El supervisor colocará estado resuelto: Solución Anticipada
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="container_escenarios d-none">
+                                    <div>
+                                        <p class="text--blue mb-4">Al realizar el ajuste colocar en la plantilla el
+                                            motivo/concepto (etiqueta):
+                                        </p>
+                                    </div>
+
+                                    <div class="row mb-5">
+                                        <div class="col">
+                                            <div class="card mb-4 rounded shadow-sm border-0 h-100 card--blue">
+                                                <div class="card-body position-relative">
+                                                    <ul class="lista-light">
+                                                        <li>VAS: No reconoce cargo</li>
+                                                        <li>Recarga vs pago de recibo (validar que sea el mismo monto)
+                                                        </li>
+                                                        <li>Recarga realizada a móvil postpago</li>
+                                                        <li>Compra no reconocida de bolsa en Facebook</li>
+                                                        <li>NETFLIX: No reconoce cargo/NUNCA se suscribió</li>
+                                                        <li>Primer prorrateo por cambio de Plan</li>
+                                                        <li>Primer prorrateo por cambio de periodo de facturación</li>
+                                                        <li><strong>Dto de línea adicional:</strong>
+                                                            Por pérdida de descuento por línea adicional por incumplir
+                                                            las
+                                                            condiciones.</li>
+                                                        <li>Primer prorrateo alta nueva/línea adicional</li>
+
+                                                        <li><strong>Mala información:</strong>
+                                                            El cliente indica que en la venta o CDPT le ofrecieron
+                                                            condiciones distintas a las brindadas, aún cuando el
+                                                            contrato
+                                                            firmado o la orden no coincidan con lo indicado por el
+                                                            cliente. SÓLO APLICA AL PRIMER RECIBO</li>
+                                                        <li><strong>Falla de Servicio/Señal:</strong>
+                                                            Cliente indica un día(s) puntual(s) que falló el servicio y
+                                                            no
+                                                            lo va a pagar. El ajuste máximo será hasta 7 días calendario
+                                                        </li>
+                                                        <li>Si se revisa que el cliente es buen pagador (2 meses
+                                                            consecutivos anteriores) ajustar el cobro por reconexion.SI
+                                                            cliente NO indica reclamo se procede por excepcion</li>
+                                                    </ul>
+
+                                                    <div class="card rounded shadow-sm boton--cyan btn-ajuste">
+                                                        <div class="card-body d-flex align-items-center">
+                                                            <p class="card-text">Se
+                                                                ajusta hasta el 100% de lo reclamado</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- <div class="container_autonomia container-outline-lista d-none">
+                                    <p class="text--blue mb-4">Asesor Call center tiene una autonomía de S/ 0.00 soles,
+                                        por ello debe reportarlo
+                                        al supervisor/líder para la aprobación en el mismo sistema.</p>
+
+                                    <p class="alerta--orange p-1 mb-5">Importante:</p>
+
+                                    <div class="lista-ul d-flex align-items-center">
+                                        <img src="./assets/imagen/campana.png" alt="Importante"
+                                            class="lista-ul__imagen" />
+
+                                        <ul>
+                                            <li class="mb-2">El ajuste debe ser aprobado por el supervisor/líder en el
+                                                sistema, caso
+                                                contrario no impactará. </li>
+
+                                            <li>Se debe generar tipificación de ajuste por cada concepto facturado.
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div> -->
+
+                                <div class="container_autonomia container-outline-lista d-none">
+                                    <div class="accordion" id="accordion">
+                                        <div class="accordion-item">
+                                            <h1 class="accordion-header">
+                                                <button class="accordion-button collapsed bg-orange text-white"
+                                                    type="button" data-bs-toggle="collapse"
+                                                    data-bs-target="#container_nc" aria-expanded="false"
+                                                    aria-controls="container_nc">
+                                                    NC
+                                                </button>
+                                            </h1>
+
+                                            <div id="container_nc" class="accordion-collapse collapse"
+                                                data-bs-parent="#accordion">
+                                                <div class="accordion-body">
+                                                    <p class="text-light--blue mb-4">
+                                                        Es un documento tributario que se utiliza para acreditar
+                                                        anulaciones,
+                                                        descuentos, devoluciones y otros, relacionados a un recibo
+                                                        emitido con
+                                                        anterioridad al cliente, sólo se puede emitir Notas de Crédito
+                                                        por cargos o
+                                                        conceptos afectos a IGV. La emisión de NC es inmedita al dar 1er
+                                                        clic al botón
+                                                        enviar de la SS tipo ajuste, recuerda que esta SS debe quedar en
+                                                        estado “En
+                                                        progreso” para que sea revisada y aprobada por el supervisor.
+                                                    </p>
+                                                    <p class="text-light--blue mb-4">
+                                                        Consideraciones: Nota de crédito / Cuando el recibo se encuentre
+                                                        pendiente de
+                                                        pago (deuda parcial o total): El asesor ingresa el monto a
+                                                        ajustar (impugnar)
+                                                        luego 1er clic en el botón enviar para que se genere el código
+                                                        de impugnación.
+                                                        Finalmente, el supervisor debe volver a dar 2do clic al botón
+                                                        enviar para que se
+                                                        emita la NC.
+                                                    </p>
+                                                    <p class="text-light--blue mb-4">
+                                                        Recuerda:<br>
+                                                        - Solo se puede emitir NC sobre la deuda vigente.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="accordion-item">
+                                            <h1 class="accordion-header">
+                                                <button class="accordion-button collapsed bg-orange text-white"
+                                                    type="button" data-bs-toggle="collapse"
+                                                    data-bs-target="#container_occ" aria-expanded="false"
+                                                    aria-controls="container_occ">
+                                                    OCC
+                                                </button>
+                                            </h1>
+
+                                            <div id="container_occ" class="accordion-collapse collapse"
+                                                data-bs-parent="#accordion">
+                                                <div class="accordion-body">
+                                                    <p class="text-light--blue mb-4">
+                                                        Es una devolución que se utiliza cuando el cliente acepta que
+                                                        dicha devolución
+                                                        se aplique en el próximo recibo a emitirse (según su ciclo de
+                                                        facturación), sea
+                                                        por conceptos ya facturados o pendientes de facturar y puede
+                                                        aplicarse tanto a
+                                                        conceptos a los que se les cargará el IGV como a los que ya lo
+                                                        tienen cargado.
+                                                    </p>
+                                                    <p class="text-light--blue mb-4">
+                                                        Consideraciones: OCC / Cuando el recibo ya fue pagado en su
+                                                        totalidad: El agente
+                                                        en la columna “Identificación de cliente” ingresará la
+                                                        información en los
+                                                        siguientes campos: Monto reclamado, tipo OCC, motivo OCC y no
+                                                        debes modificar el
+                                                        campo recurrencia (mantener el dígito 1).
+                                                    </p>
+                                                    <p class="text-light--blue mb-4">
+                                                        Recuerda:<br>
+                                                        - Se puede emitir OCC con o sin deuda vigente.<br>
+                                                        - Está prohibido modificar la recurrencia.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="container_tipificacion container-outline-lista text-primary d-none">
+                                    <p class="alerta--cyan p-1 mb-3">Utiliza el siguiente speech en tu atención</p>
+
+                                    <div class="alert alert-light text-center text-blue mb-3" role="alert">
+                                        "Sr.Srta. XXXX, entiendo lo que menciona, quisiera ofrecerle [Indicar Solución]
+                                        ¿Está de acuerdo?"
+                                    </div>
+
+                                    <p class="alerta--cyan p-1 mb-3">Utiliza el siguiente speech en tu atención</p>
+
+                                    <div class="row mb-3">
+                                        <div class="col">
+                                            <div class="card rounded shadow-sm h-100 boton--cyan text-blue">
+                                                <div class="card-body d-flex align-items-center">
+                                                    <p class="card-text">Ajustes por promociones no aplicadas</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col">
+                                            <div class="card rounded shadow-sm h-100 boton--cyan text-blue">
+                                                <div class="card-body d-flex align-items-center">
+                                                    <p class="card-text">Ajustes por recarga no reconocida</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col">
+                                            <div class="card rounded shadow-sm h-100 boton--cyan text-blue">
+                                                <div class="card-body d-flex align-items-center">
+                                                    <p class="card-text">Ajustes por promociones no aplicadas</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col">
+                                            <div class="card rounded shadow-sm h-100 text-blue">
+                                                <div class="card-body d-flex align-items-center">
+                                                    <p class="card-text">Voy a realizar el ajuste de S/. XX, este se
+                                                        aplicará en un plazo aproximado de 24 horas</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col">
+                                            <div class="card rounded shadow-sm h-100 text-blue">
+                                                <div class="card-body d-flex align-items-center">
+                                                    <p class="card-text">Voy a proceder a la asignación de [Indicar
+                                                        bono/recarga]</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col">
+                                            <div class="card rounded shadow-sm h-100 text-blue">
+                                                <div class="card-body d-flex align-items-center">
+                                                    <p class="card-text">Voy a realizar el ajuste de S/. XX, este se
+                                                        aplicará en un plazo aproximado de 24 horas</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- <div class="container_tipificacion container-outline-lista d-none">
+                                    <p class="text--blue mb-2">Tipo: Problema / Área: facturación / Subárea: Que
+                                        corresponda.
+                                    </p>
+
+                                    <p class="text-light--blue mb-4">
+                                        Para conocer el
+                                        Estado y Sub-estado consulta la guía del siguiente link: <a
+                                            href="https://informatepersonas.custhelp.com/app/answers/list/kw/1814"
+                                            target="_blank" class="enlace">Enlace</a>
+                                    </p>
+
+                                    <p class="alerta--cyan p-1 mb-5">En el caso de recarga por compra de bolsa:</p>
+
+                                    <div class="lista-ul">
+                                        <ul>
+                                            <li>Tipo: Problema</li>
+                                            <li>Área: Recargas/Prestaluca</li>
+                                            <li>Sub área: La que corresponda</li>
+                                        </ul>
+                                    </div>
+                                </div> -->
+                            </div>
+                        </div>
+
+                        <a href="./" role="button" class="btn btn-primary boton-regresar">
+                            <img src="./assets/imagen/home.png" alt="" width="30" class="me-2" />
+                            Volver al inicio
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="scripts/error-no-detectable.js"></script>
+</body>
+
+</html>
